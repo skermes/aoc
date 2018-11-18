@@ -11,3 +11,6 @@ pom.xml.asc
 .hg/
 
 *sublime*
+
+session-cookie.txt
+inputs/
