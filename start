@@ -18,10 +18,10 @@ CLJ_TEMPLATE = '''(ns aoc.puzzle-{year}-{day}
 (defn input-lines [] (string/split-lines (input)))
 
 (defn part-one []
-  "{year} day {day} Part One Stub")
+  nil)
 
 (defn part-two []
-  "{year} day {day} Part Two Stub")
+  nil)
 '''
 
 if __name__ == '__main__':
