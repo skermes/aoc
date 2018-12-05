@@ -14,7 +14,7 @@ PATHS = {
 CLJ_TEMPLATE = '''(ns aoc.puzzle-{year}-{day}
   (:require [clojure.string :as string]))
 
-(defn input [] (slurp "{input_file}"))
+(defn input [] (string/trim (slurp "{input_file}")))
 (defn input-lines [] (string/split-lines (input)))
 
 (defn part-one []
