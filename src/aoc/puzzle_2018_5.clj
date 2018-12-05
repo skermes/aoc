@@ -52,7 +52,7 @@
   (count (react-units (input))))
 
 (defn part-two []
-  (let [polymer (input)
+  (let [polymer (react-units (input))
         filtered (map #(remove % polymer) units)]
     (->> filtered
          (map react-units)
