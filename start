@@ -3,7 +3,7 @@
 import requests
 import sys
 
-INPUT_URL_FORAMT = 'https://adventofcode.com/{year}/day/{day}/input'
+INPUT_URL_FORMAT = 'https://adventofcode.com/{year}/day/{day}/input'
 COOKIE_FILE = 'session-cookie.txt'
 
 PATHS = {
@@ -32,7 +32,7 @@ if __name__ == '__main__':
   for key in PATHS:
     args[key] = PATHS[key].format(**args)
 
-  input_url = INPUT_URL_FORAMT.format(**args)
+  input_url = INPUT_URL_FORMAT.format(**args)
 
   with open(COOKIE_FILE) as cookie_file:
     cookie = cookie_file.read().strip()
